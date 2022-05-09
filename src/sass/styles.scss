@@ -1,0 +1,153 @@
+@import "reset";
+
+body {
+  background: rgb(209, 205, 205);
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  font-style: normal;
+}
+
+.title {
+  width: 800px;
+  margin: 10px auto 0;
+}
+
+.title__text {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  align-items: center;
+  text-align: center;
+  color: rgb(6, 61, 83);
+}
+
+.subtitle { 
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.subtitle__text { 
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+}
+
+.textfield {
+  display: block;
+  width: 800px;
+  height: 150px;
+  margin: 10px auto;
+  padding: 20px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-size: 18px;
+  line-height: 130%;
+  color: #000000;
+  hyphens: auto;
+  word-wrap: break-word;
+  resize: none;
+  &:focus { 
+    outline: none; 
+  }
+}
+
+.keyboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 840px;
+  height: 280px;
+  margin: 20px auto;
+  background: rgb(6, 61, 83);
+  box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+}
+
+.keyboard__container {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 240px;
+  gap: 10px;
+}
+
+.keyboard__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0px;
+  gap: 10px;
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(10, 102, 138);
+  border: 2px solid #A6B4C9;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  transition: all .2s;
+  user-select: none;
+
+  &:hover {
+    border: 2px solid #718BB1;
+    cursor: pointer;
+  }
+
+  &:active, &.active {
+    background: white;
+    border: 2px solid #718BB1;
+    box-sizing: border-box;
+    box-shadow: -1px -2px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &.key_backspace {
+    width: 145px;
+    font-size: 18px;
+  }
+
+  &.key_del {
+    font-size: 18px;
+  }
+
+  &.key_capslock {
+    width: 107px;
+  }
+
+  &.key_tab {
+    width: 100px;
+  }
+
+  &.key_leftshift {
+    width: 150px;
+  }
+
+  &.key_rightshift {
+    width: 112px;
+  }
+
+  &.key_enter {
+    width: 156px;
+  }
+
+  &.key_space {
+    width: 265px;
+  }
+}
+
+.note_text {
+  margin: 10px auto 0;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: black;
+}
