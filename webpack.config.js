@@ -7,15 +7,16 @@ module.exports = {
   entry: {
     index: './src/scripts/script.js',
     styles: './src/sass/styles.scss',
-  },
-  // devtool: 'inline-source-map',
+  },  
   devServer: {
     static: './dist',
   },
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    clean: true,
+    clean: {
+      keep: /\.git/,
+    },
   },
   plugins: [
     new MiniCssExtractPlugin(),
